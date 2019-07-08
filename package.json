@@ -14,11 +14,10 @@
     "component-query": "0.0.3"
   },
   "scripts": {
-    "test": "browserify . -s microdata -o build/build.js && mocha-phantomjs test/test.html"
+    "test": "jest"
   },
   "devDependencies": {
-    "mocha-phantomjs": "~1.1.2",
-    "browserify": ">=2.12.0 <3.0.0"
+    "jest": "^24.8.0"
   },
   "author": "Nathan Zadoks",
   "license": "MIT",
