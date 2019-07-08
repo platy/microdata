@@ -19,9 +19,11 @@
 find all the elements with the given itemtype, extracts their data and returns them in an array.
 if elem is given, it only looks within that element. 
 
+The protocol can be left off of the itemtype, allowing the search whether http or https is used.
+
 example:
 ```javascript
-microdata('http://data-vocabulary.org/Person')
+microdata('://data-vocabulary.org/Person')
 ```
 example return value:
 ```javascript

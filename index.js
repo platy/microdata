@@ -18,7 +18,7 @@ var query = require('component-query').all
 
 function microdata(itemtype, scope) {
   scope = scope || document.documentElement
-  var elems = query('[itemscope][itemtype="' + itemtype + '"]', scope)
+  var elems = query('[itemscope][itemtype$="' + itemtype + '"]', scope)
     , arr = []
   for (var i = 0, len = elems.length; i < len; i++) arr.push(extract(elems[i]))
   return arr

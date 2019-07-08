@@ -53,7 +53,7 @@ it('should find Mark Pilgrim', function() {
 </section>`
 
 
-  expect(microdata('http://data-vocabulary.org/Person')).toEqual(
+  expect(microdata('://data-vocabulary.org/Person')).toEqual(
     [{ _type: "http://data-vocabulary.org/Person"
      , photo: "http://diveintohtml5.info/examples/2000_05_mark.jpg"
      , name: "Mark Pilgrim"
