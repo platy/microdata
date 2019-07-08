@@ -55,7 +55,7 @@ function add(obj, key, val) {
 function value(elem) {
   if (elem.getAttribute('itemscope') !== null) return extract(elem)
   var attr = lookup[elem.tagName.toLowerCase()] || lookup['*']
-  return elem[attr] || elem.getAttribute(attr)
+  return elem.getAttribute('content') || elem[attr] || elem.getAttribute(attr)
 }
 
 function prepend(target, addition) {

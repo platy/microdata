@@ -11,7 +11,7 @@ it('should find Mark Pilgrim', function() {
     <dt>Position</dt>
     <dd>
       <span itemprop="title">Developer advocate</span> for
-      <span itemprop="affiliation">Google, Inc.</span>
+      <span itemprop="affiliation" content="Google, Inc.">Google</span>
     </dd>
     <dt>Mailing address</dt>
     <dd itemprop="address" itemscope itemtype="http://data-vocabulary.org/Address">
